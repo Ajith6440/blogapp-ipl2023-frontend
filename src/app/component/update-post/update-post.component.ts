@@ -17,7 +17,7 @@ export class UpdatePostComponent {
   postId:any;
   singlePost:any;
 
-  userRole:any=localStorage.getItem("userRole");
+  role:any=localStorage.getItem("role");
   loginStatus:any=localStorage.getItem("loginStatus");
   constructor(private router:Router, private service:PostapiService, private activatedRoute:ActivatedRoute)
   {

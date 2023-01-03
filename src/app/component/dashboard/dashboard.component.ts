@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class DashboardComponent {
 
   loginStatus:any=localStorage.getItem("loginStatus");
-  userRole:any=localStorage.getItem("userRole");
+  role:any=localStorage.getItem("role");
   userName=localStorage.getItem("userName");
 
   constructor(private router:Router)

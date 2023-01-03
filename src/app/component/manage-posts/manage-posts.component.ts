@@ -10,13 +10,13 @@ import { PostapiService } from 'src/app/service/postapi.service';
 export class ManagePostsComponent {
   
   posts:any;
-  userRole:any=localStorage.getItem("userRole");
+  role:any=localStorage.getItem("role");
   loginStatus:any=localStorage.getItem("loginStatus");
  
   userId:any=Number(localStorage.getItem("userId"));
   constructor(private service:PostapiService,private router:Router)
   {
-    if(this.userRole=="ADMIN")
+    if(this.role=="ADMIN")
   {
     this.service.getAllPosts().subscribe(
       response => {

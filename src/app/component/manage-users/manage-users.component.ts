@@ -11,7 +11,7 @@ export class ManageUsersComponent {
   users:any;
 
   loginStatus:any=localStorage.getItem("loginStatus");
-  userRole:any=localStorage.getItem("userRole");
+  role:any=localStorage.getItem("role");
   constructor(private service:PostapiService,private router:Router)
   {
     this.service.getAllUsers().subscribe(
